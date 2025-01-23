@@ -1,6 +1,6 @@
 import CartIcon from "../Cart/CartIcon";
-import classes from "./HeaderCardButton.module.css";
-const HeaderCardButton =props=>
+import classes from "./HeaderCartButton.module.css";
+const HeaderCartButton =props=>
 {
 return<button className={classes.button}>
     <span className={classes.icon}><CartIcon /></span>
@@ -8,4 +8,4 @@ return<button className={classes.button}>
     <span className={classes.badge}>0</span>
 </button>
 };
-export default HeaderCardButton;
+export default HeaderCartButton;
