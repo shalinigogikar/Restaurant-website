@@ -14,7 +14,7 @@ function App() {
     setCartIsShown(false);
   };
   return (
-    <CartProvider>
+    <CartProvider >
       {cartIsShown&&<Cart onClose={hideCartHandler}/>}
       <Header onShowCart= {showCartHandler}/>
       <main>

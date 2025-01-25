@@ -11,6 +11,7 @@ const HeaderCartButton =props=>
 return(<button className={classes.button} onClick={props.onClick}>
     <span className={classes.icon}><CartIcon /></span>
     <span>your Cart</span>
+    <span>{cartCtx.message}</span>
     <span className={classes.badge}>{numberOfCartItems}</span>
 </button>
 );

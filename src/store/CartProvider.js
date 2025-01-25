@@ -6,7 +6,8 @@ const CartProvider=props=>{
     items:[],
     totalAmount:0,
     addItem:addItemToCartHandler,
-    removeItem:removeItemFromCartHandler
+    removeItem:removeItemFromCartHandler,
+    message:'Click here'
     };
     return(<CartContext.Provider value={cartContext} >
         {props.children}
