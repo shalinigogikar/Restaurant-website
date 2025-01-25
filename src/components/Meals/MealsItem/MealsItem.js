@@ -9,7 +9,11 @@ return(
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
     <div>
-        <MealItemForm/>
+        <MealItemForm id={props.id} item={{
+                        id: props.id,
+                        name: props.name,
+                        price: props.price,
+                    }}/>
     </div>
     </div>
 </li>
